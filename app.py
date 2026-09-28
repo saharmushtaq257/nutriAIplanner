@@ -192,7 +192,7 @@ This is educational nutrition guidance, not medical diagnosis or treatment.
 """
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="llama3-70b-8192",
         messages=[
             {
                 "role": "system",
@@ -267,7 +267,7 @@ Do not present this as a medical prescription.
 """
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="llama3-70b-8192",
         messages=[
             {
                 "role": "system",
