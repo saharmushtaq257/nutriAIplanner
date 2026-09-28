@@ -96,10 +96,10 @@ if uploaded_report:
         st.info("This first version does not automatically extract values from PDFs. Enter important laboratory values below.")
         report_text = st.text_area(
             "Enter laboratory values",
-            placeholder="Example:
+            placeholder="""Example:
 Hb: 11.2 g/dL
 Fasting glucose: 120 mg/dL
-Total cholesterol: 210 mg/dL",
+Total cholesterol: 210 mg/dL""",
         )
 
     elif file_name.endswith((".png", ".jpg", ".jpeg")):
@@ -107,10 +107,10 @@ Total cholesterol: 210 mg/dL",
         st.image(uploaded_report, caption="Uploaded Report")
         report_text = st.text_area(
             "Enter laboratory values from the report",
-            placeholder="Example:
+            placeholder="""Example:
 Hb: 11.2 g/dL
 Fasting glucose: 120 mg/dL
-Total cholesterol: 210 mg/dL",
+Total cholesterol: 210 mg/dL""",
         )
 
 st.header("🍽️ Food Preferences")
